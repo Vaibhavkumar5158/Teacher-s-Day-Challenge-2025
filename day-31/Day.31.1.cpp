@@ -12,7 +12,7 @@ int main() {
         cin >> name;
 
         if (database.find(name) == database.end()) {
-            cout << "OK" << endl;  // using endl here (flushes each time)
+            cout << "OK" << endl;  
             database[name] = 0;
         } else {
             database[name]++;
